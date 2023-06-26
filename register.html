@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register Page</title>
+  <link rel="stylesheet" type="text/css" href="http://localhost:8080/?css=register.css">
+  <script src="https://use.fontawesome.com/dfba0bb4d8.js"></script>
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="http://localhost:8080/?png=logo.png" class="logo" alt="logo" /></a>
+  </section>
+  <div class="register-container">
+    <h2>Register</h2>
+    <p id = "error_message">Please fill in the fields to register your account</p>
+    <form action = "register" method="post" id = "registrationForm">
+      <input id = "user" type="text" name="username" placeholder="Username" pattern = "^[a-zA-Z0-9]{5,12}$" required><br>
+      <input id = "email" type="email" name="email" placeholder="Email" required><br>
+      <input id = "password" type="password" name="password" placeholder="Password" pattern = "^[a-zA-Z0-9]{6,12}$" required><br>
+      <input id = "confirmPassword" type="password" name="confirm-password" placeholder="Confirm Password" pattern = "^[a-zA-Z0-9]{6,12}$" required><br>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+  <footer class="section-p1">
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">About US</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="copyright">
+      <p>2023 E-Commerce Website. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
